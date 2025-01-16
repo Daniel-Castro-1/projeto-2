@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header{
     margin-top: 47px;
     margin-left: 42px;
@@ -22,6 +28,7 @@ margin-left: 42px;
 font-size: 15px;
 line-height: 24px;
 border: none;
+color: #ffffff;
 }
 
 .link-5{
@@ -55,9 +62,70 @@ line-height: 82px;
 .texto{display: inline-block;
     margin-left: 100px;
 }
-.abc{display: inline-block;
-margin-top: 277px;
+.foto{display: inline-block;
+
 
 }
 
+main{
+    margin-top: 100px;
+}
+
 a{margin-right:10px;}
+
+@media screen and  (max-width:900px) {
+
+    main{
+         display: flex;
+         flex-direction: column;
+ 
+     }
+           .texto{
+               display: flex;
+               flex-direction: column;
+              height: 60%;
+               order: 1;
+           } 
+ 
+           .foto{
+               display: flex;
+               order: 2;
+             height: 40%;}
+ 
+ 
+ .link{display: none;}
+ 
+ header{
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ 
+ img{
+     width: 312px;
+ height: 288px;
+ display: block;
+ 
+ }
+ .link-5{
+     width: 112px;
+ height: 27px;
+ 
+ }
+ p{
+     width: 304px;
+ height: 165px;
+ 
+ 
+ }
+ h1{width: 278px;
+     height: 60px;
+     margin-bottom: 200px;     
+ }
+     button{width: 65px;
+         height: 30px;
+         line-height: 12px;
+         font-weight: 200;
+         border-radius: 5px;
+         
+         
+         }}
